@@ -112,7 +112,10 @@ function App() {
   }, [poe]);
 
   useEffect(() => {
-    if (roofType !== "0" && roofDirection !== "0" && Number(roofSize) > 0) {
+    if (roofType !== "" && roofDirection !== "" && Number(roofSize) > 0) {
+      console.log("roofType", roofType);
+      console.log("roofDirection", roofDirection);
+      console.log("roofSize", roofSize);
       setButtonEnable(true);
       setErrorMsg("");
     } else {
@@ -162,7 +165,6 @@ const MainContainer = styled.div`
   width: 100vw;
 
   padding: 0.8rem;
-  /* margin: 0.8rem; */
 `;
 
 const RowContainer = styled.div`
@@ -173,7 +175,6 @@ const RowContainer = styled.div`
 
   height: 45vh;
   width: 100vw;
-  /* margin: 1rem; */
   padding: 0.8rem;
 
   @media only screen and (max-width: 450px) {

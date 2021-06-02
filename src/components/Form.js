@@ -48,17 +48,15 @@ const Form = ({
 export default Form;
 
 const FormContainer = styled.div`
-  height: 95%;
-  width: 50%;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  row-gap: 15px;
 
   border-radius: 1rem;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
-
-  row-gap: 15px;
+  height: 95%;
+  width: 50%;
   direction: rtl;
   margin: 1rem;
   padding: 1rem;
